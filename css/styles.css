@@ -737,7 +737,7 @@ a.dotted-link:hover {
 }
 
  .dark-mode{
-   background-color: #0e0a0a;
+   background-color: #1d202f;
  }
  .dark-mode {
   filter: invert(1) hue-rotate(180deg);
