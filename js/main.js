@@ -12,6 +12,11 @@ $(window).on('load', function() {
 
 });
 
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+
 
 function TxtType(el, toRotate, period) {
   debugger;
