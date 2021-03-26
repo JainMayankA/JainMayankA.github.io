@@ -741,14 +741,21 @@ a.dotted-link:hover {
  }
  
  .dark-mode {
-  filter: invert(1) hue-rotate(180deg) drop-shadow(0 0 0.75rem #0c1034);
+  filter: invert(1) hue-rotate(180deg) drop-shadow(0 0 0.10rem whitesmoke);
 }
 .dark-mode img{
   filter: invert(1) hue-rotate(180deg);
 }
+/* .dark-mode  h3, h4, h5, h6 {
+  filter: invert(1) hue-rotate(180deg) contrast(500%);
+}
+.dark-mode  span{
+  filter: hue-rotate(180deg) contrast(500%);
+} */
 .dark-mode .switch{
   filter: invert(1) hue-rotate(180deg);
 }
+
 .dark-mode {
   transition: color 300ms, background-color 300ms;
 }
