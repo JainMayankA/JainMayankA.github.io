@@ -133,11 +133,11 @@ a.dotted-link:hover {
 }
 
 /* ======= Header ======= */
-.header {
+/* .header {
   padding: 30px 0;
   background: #f5f5f5;
   border-top: 10px solid #778492;
-}
+} */
 
 .header .btn {
   margin-top: 60px;
@@ -665,7 +665,7 @@ a.dotted-link:hover {
   border: none;
   width: 50%;
   border-radius: 12px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -687,7 +687,7 @@ a.dotted-link:hover {
   background-color: #f1f1f1;
   border-radius: 12px;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 1;
 }
 
@@ -737,31 +737,27 @@ a.dotted-link:hover {
   }
 }
 
+/*  Dark Mode */
  .dark-mode{
-   background-color: #1d202f;
+   background-color: #101010;
  }
  
  .dark-mode {
-  filter: invert(1) hue-rotate(180deg) drop-shadow(0 0 0.10rem whitesmoke);
+  filter: invert(1) hue-rotate(180deg) drop-shadow(0 0 0.1rem whitesmoke);
+
 }
 .dark-mode img{
   filter: invert(1) hue-rotate(180deg);
 }
-/* .dark-mode  h3, h4, h5, h6 {
-  filter: invert(1) hue-rotate(180deg) contrast(500%);
-}
-.dark-mode  span{
-  filter: hue-rotate(180deg) contrast(500%);
-} */
+
 .dark-mode .switch{
   filter: invert(1) hue-rotate(180deg);
 }
-
 .dark-mode {
   transition: color 300ms, background-color 300ms;
 }
 
-
+/* Toggle Switch */
 
 .switch {
   display: inline-block;
@@ -921,3 +917,60 @@ a.dotted-link:hover {
     transform: translate(0%, -50%);
   }
 }
+
+
+
+/* 3d card */
+
+
+/* 
+.flip-card {
+  background-color: transparent;
+  perspective: 100rem;
+}
+
+.section-inner {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background: #fff;
+  padding: 30px;
+}
+
+.flip-card:hover .section-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: initial;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+
+ }  */
+/* section-inner */
+/* .flip-card-back {
+  background-color: #fff;
+  color: black;
+  transform: rotateY(180deg);
+  position:absolute;
+} 
+.flip-card-back .content{
+  margin-left: 25px;
+  position: relative;
+}
+.flip-card-back .heading{
+  margin-top: 40px;
+  margin-left: 25px;
+  color: #545e69;
+  font-size: 24px;
+} */
