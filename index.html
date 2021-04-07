@@ -79,27 +79,10 @@
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-lg-8 col-12">
-                <!-- <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>My enthusiasm lies in solving problems with appropriate solutions. Always been a
-                                persistent learner, I am enhancing my skills to develop more useful web
-                                applications/projects. I hold strong technical skills and an academic background in
-                                Full-Stack development (MERN and Django), Software Engineering methodologies, and
-                                Machine Learning services. Additionally, I have a summer fellowship experience in the
-                                field of computer vision.
-                                An aspiring full stack developer or computer vision engineer . Currently, I am
-                                developing MERN stack projects for sharpening comprehensive full-stack skills. Lately, I
-                                completed a "Computer Vision Nanodegree" under Udacity Nanodegree Program. I am always
-                                open to collaborating on projects and innovative/disruptive ideas .</p>
-                        </div>
-                    </div>
-                </section> -->
-                <!-- Try -->
-                <div class="flip-card">
+               
+                <!-- <div class="flip-card"> -->
                     <section class="about section">
-                      <div class="section-inner shadow-sm rounded" >
+                      <div class="section-inner shadow-sm rounded" onclick="flip()">
                         <div class = "flip-card-front">
                         <h2 class="heading">About Me</h2>
                           <p class = "content">My enthusiasm lies in solving problems with appropriate solutions. Always been a
@@ -112,10 +95,10 @@
                             developing MERN stack projects for sharpening comprehensive full-stack skills. Lately, I
                             completed a "Computer Vision Nanodegree" under Udacity Nanodegree Program. I am always
                             open to collaborating on projects and innovative/disruptive ideas .</p>
-                            <i class="fas fa-step-backward" style="float:left" onclick="flip()" title="Click to flip the card"></i>
+                            <!-- <i class="fas fa-step-backward" style="float:left" onclick="flip()" title="Click to flip the card"></i> -->
 
                         </div>
-                        <div class = "flip-card-back">
+                        <!-- <div class = "flip-card-back">
                             
                            <h2 class="heading">About Me</h2>
                           <p class = "content">My enthusiasm lies in solving problems with appropriate solutions. Always been a
@@ -128,14 +111,14 @@
                             developing MERN stack projects for sharpening comprehensive full-stack skills. Lately, I
                             completed a "Computer Vision Nanodegree" under Udacity Nanodegree Program. I am always
                             open to collaborating on projects and innovative/disruptive ideas .</p>
-                            <i class="fas fa-step-backward" style="float:left" onclick="flip()" title="Click to flip the card"></i>
-                        </div>
+                        </div> -->
                       </div>
                     </section>
-                  </div>
-
+                  <!-- </div> -->
+                  <div class = "flip-card">
                 <section class="latest section">
-                    <div id ="Projects" class="section-inner1 shadow-sm rounded">
+                    <div id ="Projects" class="section-inner shadow-sm rounded">
+                        <div class = "flip-card-front">
                         <h2 class="heading">Academic Projects</h2>
                         <div class="content">
 
@@ -143,7 +126,7 @@
 
                                 <div class="featured-image has-ribbon">
                                     <a href="#" target=" ">
-                                        <img class="img-fluid project-image rounded shadow-sm" src="./images/qaz.jpg"
+                                        <img class="img-fluid project-image rounded shadow-sm" src="./images/ecommerce.jpg"
                                             alt="project name" />
                                     </a>
                                     <div class="ribbon">
@@ -152,41 +135,43 @@
                                    
                                 </div>
 
-                                <h3 class="title mb-3"><a href="https://github.com/JainMayankA/SE1_Project"
-                                        target=" ">Campus Car Rental Android Application</a></h3>
+                                <h3 class="title mb-3"><a href="https://github.com/JainMayankA"
+                                        target=" ">E-Commerce Web-App</a></h3>
 
                                 <div class="desc text-left">
-                                    <p>A group project of 6 people implemented an android native application car rental
-                                        for errands or pleasure for university people.
-                                        My contribution to the project was achieving the search car, profile check, and
-                                        check the reservation calendar function and designed UX/UI for the rental
-                                        manager part.</p>
+                                   <p>Learning and Implementing full-stack skills by building a multi-client website with MERN stack and will use React Context API for state management.</p>                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a  class="col-md-4 col-12" href="#" target=" ">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="./images/todo.png"
+                                        alt="project name" />
+                                
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title "><a href="https://github.com/JainMayankA/Random-Concepts-and-Hands-On/tree/main/100DaysofCode/Full%20Stack/Keep-App-Complete-Clone-1"
+                                        target=" ">Todo App</a></h3>
+                                    <p class="mb-2">Using TypeScript on both sides (server and client) to build a Todo App from scratch with React, NodeJS, Express, and MongoDB. Implemented Get, Add, Update and Delete Todos, Client-side with React and TypeScript, Fetch data from the API, Display a Todo
+                                      & Fetch and Display data </p>
+                                    <a class="more-link" href="https://github.com/JainMayankA/Random-Concepts-and-Hands-On/tree/main/100DaysofCode/Full%20Stack/Keep-App-Complete-Clone-1"
+                                            target=" "><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                    
                                 </div>
                                 <!--//desc-->
                             </div>
                             <!--//item-->
                             <hr class="divider" />
                             <div class="item row">
-                                <a class="col-md-4 col-12"
-                                    href="https://github.com/JainMayankA/Machine-Learning-Project-/tree/master"
-                                    target=" ">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="./images/download.png"
+                                <a  class="col-md-4 col-12" href="#" target=" ">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="./images/qaz.jpg"
                                         alt="project name" />
-                                </a>
+                                
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a
-                                            href="https://github.com/JainMayankA/Machine-Learning-Project-/tree/master"
-                                            target=" ">Car Make-Model Classifier</a></h3>
-                                    <p class="mb-2">Explored YOLOv3 and VGG16 in-depth for car detection and model
-                                        classification tasks on this kaggle
-                                        dataset
-                                        Conducted various image data preprocessing such as edge detection, gaussian
-                                        blur, denoise, image segmentation, and other methods.
-                                        Implemented a neural network pipeline where YOLOv3 passes object (car) detected
-                                        bounding box to VGG16 for car model prediction from 196 car classes. Applied
-                                        transfer learning on the VGG16 model for the task and achieved 99% accuracy on
-                                        the test and validation set with 100 epochs.</p>
-                                    <a class="more-link" href="https://github.com/JainMayankA/Machine-Learning-Project-/tree/master"
+                                    <h3 class="title "><a href="https://github.com/JainMayankA/SE1_Project"
+                                        target=" ">MyCampus Car Rental</a></h3>
+                                    <p class="mb-2">A group project of 6 people implemented an android native application car rental for errands or pleasure for university people. My contribution to the project was achieving the search car,profile check, and check the reservation calendar function and designed UX/UI for the rental manager part.</p>
+                                    <a class="more-link" href="https://github.com/JainMayankA/SE1_Project"
                                             target=" "><i class="fas fa-external-link-alt"></i>Find out more</a>
                                     
                                 </div>
@@ -205,11 +190,7 @@
                                     <h3 class="title"><a
                                             href="http://maj1066.uta.cloud/trial/jain_ciudad/html/Inicio.php"
                                             target=" ">Gente and Cuidad Website</a></h3>
-                                    <p class="mb-2">Designed a multi-client, responsive and dynamic website for an NGO
-                                        in a Spanish city.
-                                        Programmed login system, account registration/contact form, create/register
-                                        events, CMS functionality, and deployed on the cloud with MYSQL database. Also
-                                        adapted this project to the MVC pattern using Laravel 5.</p>
+                                    <p class="mb-2">Created a multi-client, responsive, and data-dynamic website for an NGO using the Model-View-Controller. Programmed 10 various functionality such as login system, account registration, contact form, different functions for events part by using CRUD. Deployed the website on an AWS-based university’s cloud.</p>
                                     <a class="more-link"
                                             href="https://github.com/JainMayankA/Web-Database-Management-Project"
                                             target=" "><i class="fas fa-external-link-alt"></i>Find out more</a>
@@ -238,8 +219,8 @@
                                 
                                 </div>
                             </div>
-                            <hr class="divider" />
-                            <div class="item row">
+                            <!-- <hr class="divider" /> -->
+                            <!-- <div class="item row">
                                 <a class="col-md-4 col-12" href="https://github.com/JainMayankA/Data_Mining"
                                     target=" ">
                                     <img class="img-fluid project-image rounded shadow-sm" src="./images/fd1.png"
@@ -258,17 +239,130 @@
                                             target=" "><i class="fas fa-external-link-alt"></i>Find out more</a>
                                     
                                 </div>
-                            </div>
+                            </div> -->
 
                 
 
                         </div>
                         <!--//content-->
                     </div>
+                    <div class = "flip-card-back">
+                        <h2 class="heading">Academic Projects</h2>
+                        <div class="content">
+
+                            <div class="item featured text-center">
+
+                                <div class="featured-image has-ribbon">
+                                    <a href="#" target=" ">
+                                        <img class="img-fluid project-image rounded shadow-sm" src="./images/temp.jpg"
+                                            alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">Learning</div>
+                                    </div>
+                                   
+                                </div>
+
+                                <h3 class="title mb-3"><a href="#"
+                                        target=" ">Prediction from Chest X-Ray Images using Pre-Trained Convolutional Neural Networks</a></h3>
+
+                                <div class="desc text-left">
+                                    <p>Given an input chest X-ray image, the algorithm must detect whether the person has been infected or not. Learning under progress.</p>
+                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
+
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12"
+                                    href="#" target=" ">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="./images/NN.png"
+                                        alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a
+                                            href="https://github.com/JainMayankA/NeuralNetworks"
+                                            target=" ">Neural Networks Concepts</a></h3>
+                                    <p class="mb-2">Developed, trained, and tested single layer, multi-layer, and CNN from scratch using Python, NumPy, TensorFlow, and Keras.</p>
+                                    <a class="more-link"
+                                            href="https://github.com/JainMayankA/NeuralNetworks"
+                                            target=" "><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                    
+                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12"
+                                    href="https://github.com/JainMayankA/Machine-Learning-Project-/tree/master"
+                                    target=" ">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="./images/VehClasses.png"
+                                        alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a
+                                            href="https://github.com/JainMayankA/Machine-Learning-Project-/tree/master"
+                                            target=" ">Car Make-Model Classifier</a></h3>
+                                    <p class="mb-2">Acquired 96% accuracy and 80% validation accuracy on predicting car make & model in a given image using YOLO v3 and VGG16.Used transfer learning for VGG16 and hyperparameter tuning for YOLO v3.•Implemented various image data preprocessing such as edge detection, gaussian blur, denoise, image segmentation, and digital image interpolation on a 60-40 split dataset.
+                                    </p>
+                                    <a class="more-link" href="https://github.com/JainMayankA/Machine-Learning-Project-/tree/master"
+                                            target=" "><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                    
+                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/JainMayankA/Random-Concepts-and-Hands-On/tree/main/A.I"
+                                    target=" ">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="./images/ai.jpg"
+                                        alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/JainMayankA/Random-Concepts-and-Hands-On/tree/main/A.I"
+                                            target=" ">AI Concepts</a></h3>
+                                    <p class="mb-2">Assignments on Max Connect 4, Wumpus World, Probabilities and Bayesian Networks.
+                                        Executed a MaxConnect4Game game with an Artificial Intelligence opponent by applying a minimax algorithm with alpha-beta pruning.</p>
+                                    <a class="more-link" href="https://github.com/JainMayankA/Random-Concepts-and-Hands-On/tree/main/A.I"
+                                            target=" "><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                
+                                </div>
+                            </div>
+                            
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/JainMayankA/Data_Mining"
+                                    target=" ">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="./images/cuisineclassifier.png"
+                                        alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/JainMayankA/Data_Mining"
+                                            target=" ">Cuisine Classification</a></h3>
+                                    <p class="mb-2"> Developed a 20 cuisine multiclass classifier that classifies food recipes based on ingredients by implementing the Multinomial Naive Bayes algorithm.Achieved 70% accuracy and a 50% F1 score on the test set by using Laplace Smoothing.Analyzed various combinations of NLTK methods such as Stopwords, Stemming, and Lemmatization for reducing file size.
+                                    </p>
+                                    <a class="more-link" href="https://github.com/JainMayankA/Data_Mining"
+                                            target=" "><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                
+                                </div>
+                            </div>
+
+
+                           
+
+                
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    </div>
                     <!--//section-inner-->
                 </section>
                 <!--//section-->
-                
+            </div>
 
                 <div class="flip-card">
                     <section class="projects section">
@@ -292,10 +386,10 @@
                                             console.log('error: ' + err);
                                         });
                                     function appendOT(data) {
-                                        var mainContainer = document.getElementById("item1");
+                                        var mainContainer = document.getElementById("item");
                                         for (var i = 0; i < data.length; i++) {
                                             var div = document.createElement("div");
-                                            div.innerHTML= ' <h3 class="title"><div id="ttl"><a target=" ">'+data[i].projectName +'</a></div></h3> <p class="summary"> <div id="sume">'+data[i].description +'</div> </p></div>';
+                                            div.innerHTML= ' <h3 class="title"><div id="ttl"><a href= '+data[i].link+' target=" ">'+data[i].projectName +'</a></div></h3> <p class="summary"> <div id="sume">'+data[i].description +'</div> </p></div>';
                                             mainContainer.appendChild(div);
     
                                             
@@ -304,6 +398,8 @@
                                     }
                                 </script>
                                 <i class="fas fa-step-backward" style="float:left" onclick="flip()" title="Click to flip the card"></i>
+                                <a  style="float:right" class="btn btn-cta-primary" href="https://github.com/JainMayankA?tab=repositories">More on GitHub <svg class="svg-inline--fa fa-chevron-right fa-w-10 pt-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg><!-- <i class="fas fa-chevron-right pt-1"></i> Font Awesome fontawesome.com --></a>
+
                             </div>
                             </div>
                             <div class="flip-card-back">
@@ -324,7 +420,7 @@
                                             console.log('error: ' + err);
                                         });
                                     function appendCV(data) {
-                                        var mainContainer = document.getElementById("item");
+                                        var mainContainer = document.getElementById("item1");
                                         for (var i = 0; i < data.length; i++) {
                                             var div = document.createElement("div");
                                             div.innerHTML= ' <h3 class="title"><div id="ttl"><a href= '+data[i].link+' target=" ">'+data[i].courseName +'</a></div></h3> <p class="summary"> <div id="sume">'+data[i].description +'</div> </p></div>';
@@ -336,8 +432,8 @@
                                     }
                                 </script>
                                 <i class="fas fa-step-backward" style="float:left" onclick="flip()" title="Click to flip the card"></i>
+                                <a  style="float:right" class="btn btn-cta-primary" href="https://github.com/JainMayankA?tab=repositories">More on GitHub <svg class="svg-inline--fa fa-chevron-right fa-w-10 pt-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg><!-- <i class="fas fa-chevron-right pt-1"></i> Font Awesome fontawesome.com --></a>
 
-                               
                             </div>
                             </div>
                             
@@ -470,57 +566,14 @@
                     <!--//section-inner-->
                 </aside>
                 <!--//section-->
-
+                <div class = "flip-card">
                 <aside class="blog asde section">
-                    <div class="section-inner1 shadow-sm rounded">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            
-                            <div class="carousel-inner">
+                    
+                    <div class="section-inner shadow-sm rounded" >
+                        <div class="flip-card-front">
                                 <h2 id = "Coursework" class="heading">Coursework</h2>
-                                <div class="carousel-item active">
-                                    <h3 class="heading">Intelligent Systems (Computer Vision)</h3>
-                                    <dl>
-                                        <dt>Coursework</dt>
-                                        <dd>Machine Learning, Neural Network, Design and Analysis of Algorithm, Data Mining, Data Analysis and Modelling Techniques, Artificial Intelligence, Software Testing.</dd>
-                                        <dt>Skills</dt>
-                                        <dd>Programming languages: Python, C/C++.</dd>
-                                        <dd>Cloud: GCP, AWS, Azure.</dd>
-                                        <dd>Tools/Frameworks: OpenCV, PyTorch, Scipy, Tensorflow, Keras, Matplotlib, Cmake, Numpy, Scikit-Learn, Pandas, scikit-image.</dd>
-                                        <dd>Platform: Anaconda, Jupyter, Spider, Google Colab.</dd>
-                                        <dd> 
+                                
 
-
-                                            <!-- Knowledge: Image Classification, Recognition and Semantic Segmentation, Object Detection, Tracking and Localization, Perception, Multiple View Geometry, Image Processing, Information Retrieval, Hyperparameter Optimization, Multi-class Learning and Classification, A/B testing, 3D Computer Vision, Performance Benchmarking, Linear Algebra, Statistics and Probability.</dd> -->
-                                        <dt></i>Certifications:</dt>
-                                        <!-- <ol> -->
-                                            <!-- <li> -->
-                                                <a href=https://graduation.udacity.com/confirm/NGGCGSZH>
-                                                <dd>Computer Vision NanoDegree</dd></a>
-                                            <!-- </li> -->
-                                            <!-- <li> -->
-                                                <a href="https://coursera.org/share/6b7dce850e4adaf391a147507f418d35">
-                                                <dd>Computer Vision Basics</dd></a>
-                                            <!-- </li> -->
-                                            
-                                            
-                                            <!-- <li> -->
-                                                <a href="https://coursera.org/share/8b68d0da314dfb38a9cb003c76cdda03">
-                                                <dd>Deep Learning Specialization</dd></a>
-                                            <!-- </li> -->
-                                            
-                                            
-                                            <!-- <li> -->
-                                                <a href="https://coursera.org/share/2e411cb3bb4f115f5b8a08424c884748">
-                                                <dd>AI for Medicine Specialization</dd>
-                                            <!-- </li> -->
-                                            </a>
-
-                                        <!-- </ol> -->
-                                        
-                                    </dl>
-                              
-                                </div>
-                                <div class="carousel-item">
                                     <h3 class="heading">Software Engineering <br> (Full-Stack Web Development)</h3>
                                     <dl>
                                         <dt>Coursework</dt>
@@ -536,23 +589,54 @@
                                         <a href="https://www.udemy.com/certificate/UC-3fdaf599-55b2-4c3e-a36f-17fed56c8759/"><dd>Google Associate Cloud Engineer: Udemy</dd></a>
                                         
                                     </dl>
+                                    <i class="fas fa-step-backward" style="float:left" onclick="flip()" title="Click to flip the card"></i>
+
+                              
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2 id = "Coursework" class="heading">Coursework</h2>
+                                    <h3 class="heading">Intelligent Systems (Computer Vision)</h3>
+                                    <dl>
+                                        <dt>Coursework</dt>
+                                        <dd>Machine Learning, Neural Network, Design and Analysis of Algorithm, Data Mining, Data Analysis and Modelling Techniques, Artificial Intelligence, Software Testing.</dd>
+                                        <dt>Skills</dt>
+                                        <dd>Programming languages: Python, C/C++.</dd>
+                                        <dd>Cloud: GCP, AWS, Azure.</dd>
+                                        <dd>Tools/Frameworks: OpenCV, PyTorch, Scipy, Tensorflow, Keras, Matplotlib, Cmake, Numpy, Scikit-Learn, Pandas, scikit-image.</dd>
+                                        <dd>Platform: Anaconda, Jupyter, Spider, Google Colab.</dd>
+                                        <dd> 
+
+
+                                            <!-- Knowledge: Image Classification, Recognition and Semantic Segmentation, Object Detection, Tracking and Localization, Perception, Multiple View Geometry, Image Processing, Information Retrieval, Hyperparameter Optimization, Multi-class Learning and Classification, A/B testing, 3D Computer Vision, Performance Benchmarking, Linear Algebra, Statistics and Probability.</dd> -->
+                                        <dt></i>Certifications:</dt>
+                                        
+                                                <a href=https://graduation.udacity.com/confirm/NGGCGSZH>
+                                                <dd>Computer Vision NanoDegree</dd></a>
+                                            
+                                                <a href="https://coursera.org/share/6b7dce850e4adaf391a147507f418d35">
+                                                <dd>Computer Vision Basics</dd></a>
+                                           
+                                                <a href="https://coursera.org/share/8b68d0da314dfb38a9cb003c76cdda03">
+                                                <dd>Deep Learning Specialization</dd></a>
+                                            
+                                                <a href="https://coursera.org/share/2e411cb3bb4f115f5b8a08424c884748">
+                                                <dd>AI for Medicine Specialization</dd>
+                                            </a>
+
+                                        
+                                    </dl>
+                                    <i class="fas fa-step-backward" style="float:left" onclick="flip()" title="Click to flip the card"></i>
+
                                     
                                 </div>
                                 
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
+                            
+                    
+                
                 </aside>
+            </div>
+
 
                 <aside class="languages aside section">
                     <div class="section-inner1 shadow-sm rounded">
@@ -598,26 +682,45 @@
                     <!--//section-inner-->
                 </aside>
                 <!--//section-->
-
+                <div class="flip-card">
                 <aside class="list softskiils aside section">
-                    <div class="section-inner1 shadow-sm rounded">
+                    <div class="section-inner shadow-sm rounded" onclick="flip()">
+                        <div class="flip-card-front">
                         <h2 class="heading">Soft Skills</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-angle-right"></i> Self-Motivation and Handling Pressure</li>                                
-                                <li><i class="fas fa-angle-right"></i> Leadership and Collaboration</li>
-                                <li><i class="fas fa-angle-right"></i> Approachability and Helpfulness</li>
-                                <li><i class="fas fa-angle-right"></i> Open-mindedness and Communication</li>
-                                <li><i class="fas fa-angle-right"></i> Detail Oriented and Accountability </li>
-                                <li><i class="fas fa-angle-right"></i> Creativity and Problem Solving </li>
-                                <li><i class="fas fa-angle-right"></i> Resilience and Learner</li>
+                                <li><i class="fas fa-angle-right"></i> Self-Motivation </li>                                
+                                <li><i class="fas fa-angle-right"></i> Leadership </li>
+                                <li><i class="fas fa-angle-right"></i> Approachability </li>
+                                <li><i class="fas fa-angle-right"></i> Open-mindedness </li>
+                                <li><i class="fas fa-angle-right"></i> Detail Oriented  </li>
+                                <li><i class="fas fa-angle-right"></i> Creativity  </li>
+                                <li><i class="fas fa-angle-right"></i> Resilience </li>
                             </ul>
                         </div>
                         <!--//content-->
                     </div>
+                    <div class="flip-card-back">
+                        <h2 class="heading">Soft Skills</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-angle-right"></i> Handling Pressure</li>                                
+                                <li><i class="fas fa-angle-right"></i> Collaboration</li>
+                                <li><i class="fas fa-angle-right"></i>  Helpfulness</li>
+                                <li><i class="fas fa-angle-right"></i>  Communication</li>
+                                <li><i class="fas fa-angle-right"></i>  Accountability </li>
+                                <li><i class="fas fa-angle-right"></i>  Problem Solving </li>
+                                <li><i class="fas fa-angle-right"></i>  Learner</li>
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+
+                </div>
                     <!--//section-inner-->
                 </aside>
                 <!--//section-->
+            </div>
 
                
             </div>

@@ -1,17 +1,33 @@
 ﻿[
   {
     "id": "1",
-    "projectName": "Semantic based automatic web service check",
-    "description": "Many web services do not have explicit associated semantic descriptions. Therefore, implemented a prototype for semantic-based service categorization of web services and enhancement of service request.Initiated the ontology framework as a solution, with that implemented algorithms such as support vector machine, prune association patterns, and mapping for achieving the desired task."
+    "link": "https://github.com/JainMayankA/CloudLabHandsOn",
+    "projectName": "Full Stack Cloud Developer",
+    "description" : "Learning and Implementing Cloud Native and Full Stack Development using hands-on projects involving HTML, JavaScript, Node.js, Python, Django, Containers, Microservices and more."   
   },
   {
     "id": "2",
-    "projectName": "Pustakalaya (E-Library)",
-    "description": "An integrated library system, also known as a library management system, is an enterprise resource planning system for a library, used to track items owned, orders made, bills paid, and patrons who have borrowed."
+    "link": "https://github.com/JainMayankA/Random-Concepts-and-Hands-On/tree/main/100DaysofCode/Full%20Stack/mern-exercise-tracker",
+    "projectName": "Activity Log",
+    "description" : "Developed a MERN Stack application by using basics of MongoDB, Express, React, Node.js, and Mongoose."   
   },
   {
     "id": "3",
-    "projectName": "Tweet Creator Application",
-    "description": "An application that will load a predefined set of short forms from a text file that the user inputs as a command line argument. After which it prompts the user to enter a phrase if the application can convert the phrase into an acceptable tweet (that is of size less than 140 characters) it will do so and print the same on the screen else the application will send a message to the user that it cannot convert the message into a tweet."
- }
+    "link": "https://github.com/JainMayankA/Random-Concepts-and-Hands-On/tree/main/100DaysofCode/Full%20Stack/file-uploader",
+    "projectName": "File Upload/Download and Preview",
+    "description": " Created a file upload and download functionality with a preview of the image using the MERN stack."
+  },
+  {
+    "id": "4",
+    "link": "https://github.com/JainMayankA/Random-Concepts-and-Hands-On/tree/main/100DaysofCode/Full%20Stack/api-githubjobs-app",
+    "projectName": "Job Search",
+    "description": "Implemented an Github API-based job search portal by using React and Node. Avoided prop drilling in components by using React Context API. Decreased the request and image load on the network from 2MB to 87KB using lazy loading functionality."
+  },
+ {
+  "id": "5",
+  "link": "https://github.com/JainMayankA/Semantic-based-automatic-web-service-check-detection",
+  "projectName": "Semantic based automatic web service check",
+    "description": "Many web services do not have explicit associated semantic descriptions. Therefore, implemented a prototype for semantic-based service categorization of web services and enhancement of service request.Initiated the ontology framework as a solution, with that implemented algorithms such as support vector machine, prune association patterns, and mapping for achieving the desired task."
+  
+}
 ]
