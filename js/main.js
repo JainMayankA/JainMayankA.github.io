@@ -12,6 +12,10 @@ $(window).on('load', function() {
 
 });
 
+function flip() {
+    $('.flip-card').toggleClass('hover');
+}
+
 function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");

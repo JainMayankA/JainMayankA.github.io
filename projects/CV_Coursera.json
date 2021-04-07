@@ -1,0 +1,26 @@
+﻿[
+  {
+    "id": "1",
+    "link":"https://github.com/JainMayankA/NDCV",
+    "courseName": "Computer Vision Nanodegree",
+    "description": "Facial Keypoint Detection to extract 68 keypoint features from image data and apply CNN for classification tasks. Automatic Image Captioning a combination of two different architectures  CNN & RNN(LSTM).Landmark Detection and Tracking using feature detection and keypoint descriptors to build a map of the environment with SLAM."
+  },
+  {
+    "id": "2",
+    "link":"https://github.com/JainMayankA/AI-Medicine",
+    "courseName": "AI for Medicine by DeepLearning.AI on Coursera",
+    "description": "Diagnosed diseases from x-rays and 3D MRI brain images and Predicted patient survival rates more accurately using tree-based models. Estimated treatment effects on patients using data from randomized trials and Automated the task of labeling medical datasets using natural language processing."
+  },
+  {
+    "id": "3",
+    "link":"https://github.com/JainMayankA/Random-Concepts-and-Hands-On/tree/main/Computer%20Vision%20Basics",
+    "courseName": "Computer Vision Basics by UB and SUNY on Coursera",
+    "description": "Understood what computer vision is and its goals and identified some of the key application areas of computer vision. Applied mathematical techniques to complete computer vision tasks and the digital imaging process."
+  },
+  {
+    "id": "4",
+    "link":"#",
+    "courseName": "Deep Learning by DeepLearning.AI on Coursera",
+    "description": "Sequence Models, Neural Networks and Deep Learning, Convolutional Neural Networks, Structuring Machine Learning Projects, and Improving Deep Neural Networks: Hyperparameter tuning, Regularization, and Optimization."
+  }
+]

@@ -52,20 +52,13 @@
                     <li class="list-inline-item"><a href="mailto:maxjain71@gmail.com" title="maxjain71@gmail.com"><i
                                 class="fa fa-envelope"></i></a></li>
                     <li class="list-inline-item"><a href="https://goo.gl/maps/9eFU5ZkqvXzE517Z6" title="Arlington,Texas"><i
-                                class="fas fa-map-pin"></i></a></li>  
+                                class="fas fa-map-pin"></i></a></li>
+                    <li class="list-inline-item"><a onclick="flip()" title="Switch Branch (Role)"><i
+                                class="fas fa-code-branch"></i></a></li>  
                                           
                 </ul>
-                <div class="dropdown">
-                    <button class="dropbtn">Navigate to</button>
-                    <div class="dropdown-content">
-                      <a href="#Projects">Latest Projects</a>
-                      <a href="#Coursework">Coursework</a>
-                      <a href="#github">Github Calendar</a>
-                    </div>
-                  </div>
             </div>
             <!--//profile-->
-            <!-- <button class="btn btn-cta-primary float-right" onclick="darkMode()">Toggle dark mode</button> -->
             <div class = "btn float-right">
                 <div class="switch" style="float:right;">
                     <input type="checkbox" class="switch__input" id="Switch" onclick="darkMode()">
@@ -86,7 +79,7 @@
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-lg-8 col-12">
-                <section class="about section">
+                <!-- <section class="about section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
@@ -102,11 +95,11 @@
                                 open to collaborating on projects and innovative/disruptive ideas .</p>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <!-- Try -->
-                <!-- <div class="flip-card">
+                <div class="flip-card">
                     <section class="about section">
-                      <div class="section-inner shadow-sm rounded">
+                      <div class="section-inner shadow-sm rounded" >
                         <div class = "flip-card-front">
                         <h2 class="heading">About Me</h2>
                           <p class = "content">My enthusiasm lies in solving problems with appropriate solutions. Always been a
@@ -119,6 +112,8 @@
                             developing MERN stack projects for sharpening comprehensive full-stack skills. Lately, I
                             completed a "Computer Vision Nanodegree" under Udacity Nanodegree Program. I am always
                             open to collaborating on projects and innovative/disruptive ideas .</p>
+                            <i class="fas fa-step-backward" style="float:left" onclick="flip()" title="Click to flip the card"></i>
+
                         </div>
                         <div class = "flip-card-back">
                             
@@ -133,13 +128,14 @@
                             developing MERN stack projects for sharpening comprehensive full-stack skills. Lately, I
                             completed a "Computer Vision Nanodegree" under Udacity Nanodegree Program. I am always
                             open to collaborating on projects and innovative/disruptive ideas .</p>
-                    </div>
+                            <i class="fas fa-step-backward" style="float:left" onclick="flip()" title="Click to flip the card"></i>
+                        </div>
                       </div>
                     </section>
-                  </div> -->
+                  </div>
 
                 <section class="latest section">
-                    <div id ="Projects" class="section-inner shadow-sm rounded">
+                    <div id ="Projects" class="section-inner1 shadow-sm rounded">
                         <h2 class="heading">Academic Projects</h2>
                         <div class="content">
 
@@ -274,74 +270,98 @@
                 <!--//section-->
                 
 
+                <div class="flip-card">
+                    <section class="projects section">
+                        <div  class="section-inner shadow-sm rounded">
+                            <div class = "flip-card-front">
+                                <h2 class="heading">Other Projects</h2>
+                            <div class="content">
+                                <div class="item" id = "item">
+                                    
+                                </div> 
+                                
+                                <script>
+                                    fetch('./projects/other.json')
+                                        .then(function (response) {
+                                            return response.json();
+                                        })
+                                        .then(function (data) {
+                                            appendOT(data);
+                                        })
+                                        .catch(function (err) {
+                                            console.log('error: ' + err);
+                                        });
+                                    function appendOT(data) {
+                                        var mainContainer = document.getElementById("item1");
+                                        for (var i = 0; i < data.length; i++) {
+                                            var div = document.createElement("div");
+                                            div.innerHTML= ' <h3 class="title"><div id="ttl"><a target=" ">'+data[i].projectName +'</a></div></h3> <p class="summary"> <div id="sume">'+data[i].description +'</div> </p></div>';
+                                            mainContainer.appendChild(div);
+    
+                                            
+                                        }
+                                        
+                                    }
+                                </script>
+                                <i class="fas fa-step-backward" style="float:left" onclick="flip()" title="Click to flip the card"></i>
+                            </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2 class="heading">Other Projects</h2>
+                            <div class="content">
+                                <div class="item" id="item1">
+                                   </div>
+                                 
+                                <script>
+                                    fetch('./projects/CV_Coursera.json')
+                                        .then(function (response) {
+                                            return response.json();
+                                        })
+                                        .then(function (data) {
+                                            appendCV(data);
+                                        })
+                                        .catch(function (err) {
+                                            console.log('error: ' + err);
+                                        });
+                                    function appendCV(data) {
+                                        var mainContainer = document.getElementById("item");
+                                        for (var i = 0; i < data.length; i++) {
+                                            var div = document.createElement("div");
+                                            div.innerHTML= ' <h3 class="title"><div id="ttl"><a href= '+data[i].link+' target=" ">'+data[i].courseName +'</a></div></h3> <p class="summary"> <div id="sume">'+data[i].description +'</div> </p></div>';
+                                            mainContainer.appendChild(div);
+    
+                                            
+                                        }
+                                        
+                                    }
+                                </script>
+                                <i class="fas fa-step-backward" style="float:left" onclick="flip()" title="Click to flip the card"></i>
 
-                <section class="projects section">
-                    <div id ="Projects" class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Other Projects</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a target=" ">Semantic based automatic web service check
-                                        detection</a></h3>
-                                <p class="summary"> Many web services do not have explicit associated semantic
-                                    descriptions. Therefore, implemented a prototype for semantic-based service
-                                    categorization of web services and enhancement of service request.Initiated the
-                                    ontology framework as a solution, with that implemented algorithms such as support
-                                    vector machine, prune association patterns, and mapping for achieving the desired
-                                    task.</p>
-                               </div>
-                            <!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a target=" ">Pustakalaya (E-Library)</a></h3>
-                                <p class="summary">An integrated library system, also known as a library management
-                                    system, is an enterprise resource planning system for a library, used to track items
-                                    owned, orders made, bills paid, and patrons who have borrowed.</p>
-                                </div>
-                            <!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a target=" ">Tweet Creator Application</a></h3>
-                                <p class="summary"> An application that will load a predefined set of short forms from a
-                                    text file that the user inputs as a command line argument. After which it prompts
-                                    the user to enter a phrase if the application can convert the phrase into an
-                                    acceptable tweet (that is of size less than 140 characters) it will do so and print
-                                    the same on the screen else the application will send a message to the user that it
-                                    cannot convert the message into a tweet. </p>
-                               </div>
-                            <!--//item-->
+                               
+                            </div>
+                            </div>
+                            
+                            <!--//content-->
                         </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
+                        <!--//section-inner-->
+                    </section>
+                    <!--//section-->
+                </div>
+                
                 <section class="github section">
-                    <div class="section-inner shadow-sm rounded">
+                    <div class="section-inner1 shadow-sm rounded">
                         <h2 class="heading">My <a href="https://github.com/JainMayankA">GitHub</a> Calendar</h2>
                             <div id ="github" class="calendar">
                                 <!-- Loading stuff -->
                                 Loading the data just for you.
-
                             </div>
-                    </div><!--//secton-inner-->
+                    </div><!--//section-inner-->
                 </section><!--//section-->
             </div>
             <!--//primary-->
             <div class="secondary col-lg-4 col-12">
-                <!-- <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span
-                                        class="sr-only">Location:</span>Arlington, Texas</li>
-                                </ul>
-                        </div> -->
-                        <!--//content-->
-                    <!-- </div> -->
-                    <!--//section-inner-->
-                <!-- </aside> -->
-                <!--//aside-->
                 <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
+                    <div class="section-inner1 shadow-sm rounded">
                         <h2 class="heading">Education</h2>
                         <div class="content">
                             <div class="item">
@@ -365,7 +385,7 @@
                 <!--//section-->
 
                 <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
+                    <div class="section-inner1 shadow-sm rounded">
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
                             <div class="item">
@@ -394,7 +414,7 @@
                 
 
                 <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
+                    <div class="section-inner1 shadow-sm rounded">
                         <h2 class="heading"> Technical Skills</h2>
                         <div class="content">
                             <p class="intro">
@@ -452,7 +472,7 @@
                 <!--//section-->
 
                 <aside class="blog asde section">
-                    <div class="section-inner shadow-sm rounded">
+                    <div class="section-inner1 shadow-sm rounded">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             
                             <div class="carousel-inner">
@@ -535,7 +555,7 @@
                 </aside>
 
                 <aside class="languages aside section">
-                    <div class="section-inner shadow-sm rounded">
+                    <div class="section-inner1 shadow-sm rounded">
                         <h2 class="heading">ExtraCurricular</h2>
                         <div class="content">
                             <ul class="list-unstyled">
@@ -559,7 +579,7 @@
 
 
                 <aside class="list music aside section">
-                    <div class="section-inner shadow-sm rounded">
+                    <div class="section-inner1 shadow-sm rounded">
                         <h2 class="heading">Favourite coding music</h2>
                         <div class="content">
                             <ul class="list-unstyled">
@@ -579,8 +599,8 @@
                 </aside>
                 <!--//section-->
 
-                <aside class="list conferences aside section">
-                    <div class="section-inner shadow-sm rounded">
+                <aside class="list softskiils aside section">
+                    <div class="section-inner1 shadow-sm rounded">
                         <h2 class="heading">Soft Skills</h2>
                         <div class="content">
                             <ul class="list-unstyled">
@@ -598,16 +618,6 @@
                     <!--//section-inner-->
                 </aside>
                 <!--//section-->
-                <!-- <aside class="languages aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Map</h2>
-                        <div class="content">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214874.15862066855!2d-97.27549802408436!3d32.701765144354034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e62d2e40898d3%3A0xb5ef6ac1fa05351!2sArlington%2C%20TX!5e0!3m2!1sen!2sus!4v1617205821070!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div> -->
-                        <!--//content-->
-                    <!-- </div> -->
-                    <!--//section-inner-->
-                <!-- </aside> -->
 
                
             </div>

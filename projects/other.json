@@ -13,5 +13,5 @@
     "id": "3",
     "projectName": "Tweet Creator Application",
     "description": "An application that will load a predefined set of short forms from a text file that the user inputs as a command line argument. After which it prompts the user to enter a phrase if the application can convert the phrase into an acceptable tweet (that is of size less than 140 characters) it will do so and print the same on the screen else the application will send a message to the user that it cannot convert the message into a tweet."
-  }
+ }
 ]
