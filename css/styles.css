@@ -391,7 +391,7 @@ a.dotted-link:hover {
 }
 
 /* Git section */
-.github-graph {
+/* .github-graph {
   margin-bottom: 30px;
 }
 
@@ -414,7 +414,7 @@ a.dotted-link:hover {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-}
+} */
 
 /* Info Section */
 .info .svg-inline--fa {
