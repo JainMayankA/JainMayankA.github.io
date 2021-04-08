@@ -758,6 +758,13 @@ a.dotted-link:hover {
 .dark-mode img{
   filter: invert(1) hue-rotate(180deg);
 }
+.dark-mode header h1{
+ filter:  contrast(400%) brightness(280%) hue-rotate(280deg);
+}
+.dark-mode header h2{
+  filter: invert(1) contrast(100%) hue-rotate(190deg);
+ }
+
 
 .dark-mode .switch{
   filter: invert(1) hue-rotate(180deg);
