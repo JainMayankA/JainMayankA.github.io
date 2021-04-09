@@ -941,8 +941,10 @@ a.dotted-link:hover {
 
 .flip-card {
   background-color: transparent;
+  -webkit-perspective: 1000rem;
   perspective: 1000rem;
-  height: auto;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .section-inner{
@@ -952,8 +954,6 @@ a.dotted-link:hover {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   transform-origin: center right;
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-  /* background: #fff; */
   padding: 30px;
   position: relative;
 }
@@ -963,9 +963,9 @@ a.dotted-link:hover {
 }
 
 .flip-card-front, .flip-card-back {
-  position: initial;
+  position: relative;
   width: 100%;
-  /* -webkit-backface-visibility: hidden; */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
