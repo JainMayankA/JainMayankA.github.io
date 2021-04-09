@@ -941,7 +941,7 @@ a.dotted-link:hover {
 
 .flip-card {
   background-color: transparent;
-  perspective: 100rem;
+  perspective: 1000rem;
   height: auto;
 }
 
@@ -951,13 +951,14 @@ a.dotted-link:hover {
   height: auto;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  transform-origin: center right;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   background: #fff;
   padding: 30px;
 }
 
 .flip-card.hover .section-inner {
-  transform: rotateY(180deg);
+  transform:translateX(-100%) rotateY(180deg);
 }
 
 .flip-card-front, .flip-card-back {
