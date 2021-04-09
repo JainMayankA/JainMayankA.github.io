@@ -765,7 +765,6 @@ a.dotted-link:hover {
   filter: invert(1) contrast(100%) hue-rotate(190deg);
  }
 
-
 .dark-mode .switch{
   filter: invert(1) hue-rotate(180deg);
 }
@@ -941,7 +940,7 @@ a.dotted-link:hover {
 
 
 .flip-card {
-  background-color: transparent;
+  background-color: white;
   perspective: 100rem;
   height: auto;
 }
