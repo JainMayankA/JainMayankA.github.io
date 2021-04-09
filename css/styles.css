@@ -952,19 +952,20 @@ a.dotted-link:hover {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   transform-origin: center right;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background: #fff;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  /* background: #fff; */
   padding: 30px;
+  position: relative;
 }
 
-.flip-card.hover .section-inner {
+.section-inner.hover {
   transform:translateX(-100%) rotateY(180deg);
 }
 
 .flip-card-front, .flip-card-back {
   position: initial;
   width: 100%;
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
   backface-visibility: hidden;
 }
 

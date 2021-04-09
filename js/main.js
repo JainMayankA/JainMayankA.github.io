@@ -13,7 +13,7 @@ $(window).on('load', function() {
 });
 
 function flip() {
-    $('.flip-card').toggleClass('hover');
+    $('.section-inner').toggleClass('hover');
 }
 
 function darkMode() {
