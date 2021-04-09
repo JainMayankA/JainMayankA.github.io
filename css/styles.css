@@ -940,7 +940,7 @@ a.dotted-link:hover {
 
 
 .flip-card {
-  background-color: white;
+  background-color: transparent;
   perspective: 100rem;
   height: auto;
 }
@@ -968,13 +968,13 @@ a.dotted-link:hover {
 }
 
 .flip-card-front {
-  background-color: #fff;
+  background-color: white;
   color: black;
 
  } 
 
 .flip-card-back {
-  background-color: #fff;
+  background-color: white;
   color: black;
   transform: rotateY(180deg);
   position:absolute;
