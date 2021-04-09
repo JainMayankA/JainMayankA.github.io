@@ -976,7 +976,7 @@ a.dotted-link:hover {
 .flip-card-front {
   background-color: white;
   color: black;
-  z-index: 2;
+  /* z-index: 2; */
 
  } 
 
