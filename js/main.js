@@ -12,6 +12,10 @@ $(window).on('load', function() {
 
 });
 
+// zindex
+
+$('#dis').fadeIn('slow').delay(5000).fadeOut('slow', function(){$(this).css('display', 'none')});
+
 function flip() {
     $('.flip-card').toggleClass('hover');
 }

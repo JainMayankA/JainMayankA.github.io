@@ -988,3 +988,10 @@ a.dotted-link:hover {
   position:absolute;
   padding: 30px; 
 } 
+
+#dis{
+  height: 100vh;
+  margin-top: auto;
+  text-align:center;
+  background-color: whtie;
+}
