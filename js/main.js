@@ -12,8 +12,27 @@ $(window).on('load', function() {
 
 });
 
-// zindex
+// back to top
+var btn = $('#button1');
 
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+
+
+
+// Disclaimer
 $('#dis').fadeIn('slow').delay(5000).fadeOut('slow', function(){$(this).css('display', 'none')});
 
 function flip() {
