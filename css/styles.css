@@ -676,6 +676,9 @@ a.dotted-link:hover {
 .dark-mode header h1{
  filter:  contrast(400%) brightness(280%) hue-rotate(280deg);
 }
+.dark-mode button{
+  filter: invert(1) hue-rotate(180deg);
+}
 .dark-mode header h2{
   filter: invert(1) contrast(100%) hue-rotate(190deg);
  }
@@ -885,23 +888,28 @@ a.dotted-link:hover {
 .flip-card-front, .flip-card-back {
   position: relative;
   width: 100%;
+  -webkit-z-index: 2;
+  z-index: 2;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .flip-card-front {
-  background-color: white;
-  color: black;
+  background-color: transparent;
+  -webkit-z-index: 1;
+  z-index: 1;
 
  } 
 
 .flip-card-back {
-  background-color: white;
-  color: black;
+  background-color: transparent;
   -webkit-transform: rotate(180deg);
   transform: rotateY(180deg);
   position:absolute;
+  -webkit-z-index: -1;
+  z-index: -1;
   padding: 30px; 
+
 } 
 button {
   outline: none;
