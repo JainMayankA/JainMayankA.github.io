@@ -205,10 +205,7 @@ a.dotted-link:hover {
   margin-bottom: 30px;
 }
 
-.section .section-inner {
-  background: #fff;
-  padding: 30px;
-}
+
 .section .section-inner1 {
   background: #fff;
   padding: 30px;
@@ -872,6 +869,7 @@ a.dotted-link:hover {
 }
 
 .section-inner{
+  background: #fff;
   display: grid;
   width: 100%;
   height: auto;
@@ -893,26 +891,28 @@ a.dotted-link:hover {
 .flip-card-front, .flip-card-back {
   position: relative;
   width: 100%;
-  /* -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .flip-card-front {
   background-color: transparent;
   color: black;
+  z-index: 2;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
  } 
 
 .flip-card-back {
-  background-color: white;
+  background-color: transparent;
   color: black;
+  z-index: 1;
   -webkit-transform: rotate(180deg);
   transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  position:absolute;
+  position:fixed;
   padding: 30px; 
 } 
 button {
