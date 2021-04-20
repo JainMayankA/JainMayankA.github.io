@@ -964,7 +964,9 @@ button:focus{
   width: 50px;
   height: 50px;
   text-align: center;
-  border-radius: 4px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -975,20 +977,18 @@ button:focus{
   z-index: 1000;
 }
 #button1::after {
-  /* font-family: "Font Awesome 5 Free";
-   content: "\0023"; */
   font-weight: normal;
   font-style: normal;
   font-size: 2em;
   line-height: 50px;
-  color: #fff;
+  color: rgb(5, 34, 4);
 }
 #button1:hover {
   cursor: pointer;
-  background-color: rgb(248, 248, 248);
+  background-color:  rgb(5, 34, 4);
 }
 #button1:active {
-  background-color: rgb(255, 255, 255);
+  background-color:  rgb(5, 34, 4);
 }
 #button1.show {
   opacity: 1;
