@@ -59,9 +59,20 @@
                                 class="fas fa-code-branch"></i></a></li>   -->
                                           
                 </ul>
-                <!-- <div class="dropdown">
-                    <button class="dropbtn" onclick="flip()"><a ><i class="fas fa-code-branch " style="font-size:19px"></i></a> Switch Branch (Role)</button>
-                  </div> -->
+                
+                <!-- <div class="dropdown" id = "x" onload="check()">
+                    <script>
+                        function check(){
+                            var buttonShow = document.getElementById("x");
+                        if (navigator.appVersion.indexOf("Win") != -1){
+                            console.log("windows")
+                            var button = document.createElement("button");
+                            button.innerHTML = '<button class="dropbtn" onclick="flip()"><a ><i class="fas fa-code-branch " style="font-size:19px"></i></a> Switch Branch (Role)</button>'
+                            buttonShow.appendChild(button);
+                        }
+                    }
+                </script>
+                </div> -->
 
             </div>
 

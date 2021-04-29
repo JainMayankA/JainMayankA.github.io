@@ -665,30 +665,39 @@ a.dotted-link:hover {
 
 
  .dark-mode #button1{
+   -webkit-filter:  invert(1) hue-rotate(180deg);
   filter: invert(1) hue-rotate(180deg);
  }
  
  .dark-mode {
+   -webkit-filter: 
+  invert(1) hue-rotate(180deg) drop-shadow(0 0 0.1rem whitesmoke);
   filter: invert(1) hue-rotate(180deg) drop-shadow(0 0 0.1rem whitesmoke);
 
 }
 .dark-mode img{
+  -webkit-filter:invert(1) hue-rotate(180deg); 
   filter: invert(1) hue-rotate(180deg);
 }
 .dark-mode header h1{
+  -webkit-filter: contrast(400%) brightness(280%) hue-rotate(280deg);
  filter:  contrast(400%) brightness(280%) hue-rotate(280deg);
 }
 .dark-mode button{
+  -webkit-filter:invert(1) hue-rotate(180deg) ;
   filter: invert(1) hue-rotate(180deg);
 }
 .dark-mode header h2{
+  -webkit-filter:invert(1) contrast(100%) hue-rotate(190deg) ;
   filter: invert(1) contrast(100%) hue-rotate(190deg);
  }
 
 .dark-mode .switch{
+  -webkit-filter:invert(1) hue-rotate(180deg);
   filter: invert(1) hue-rotate(180deg);
 }
 .dark-mode {
+  -webkit-transition:color 300ms, background-color 300ms ;
   transition: color 300ms, background-color 300ms;
 }
 
